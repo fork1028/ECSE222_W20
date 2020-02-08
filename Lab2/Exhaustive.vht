@@ -55,9 +55,9 @@ BEGIN
                                          
 generate_test : PROCESS
 BEGIN
-     FOR i IN 0 to 16 LOOP
+     FOR i IN 0 to 15 LOOP
      A <= std_logic_vector(to_unsigned(i,4));
-     FOR j IN 0 to 16 LOOP
+     FOR j IN 0 to 15 LOOP
      B<=std_logic_vector(to_unsigned(j,4));
      WAIT FOR 10 ns;
      END LOOP;

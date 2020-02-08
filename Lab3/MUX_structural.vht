@@ -92,7 +92,7 @@ BEGIN
 		  A<='1';
 		  B<='0';
 		  S<='1';
-		  
+		  WAIT FOR 10 ns;		  
 WAIT;                                                        
 END PROCESS always;                                          
 END MUX_structural_arch;
