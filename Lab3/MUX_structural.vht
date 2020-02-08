@@ -20,7 +20,7 @@
 -- ***************************************************************************
 -- Generated on "01/27/2020 17:05:18"
                                                             
--- Vhdl Test Bench template for design  :  xinyue_chen_MUX_structural
+-- Vhdl Test Bench template for design  :  MUX_structural
 -- 
 -- Simulation tool : ModelSim-Altera (VHDL)
 -- 
@@ -28,16 +28,16 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY xinyue_chen_MUX_structural_vhd_tst IS
-END xinyue_chen_MUX_structural_vhd_tst;
-ARCHITECTURE xinyue_chen_MUX_structural_arch OF xinyue_chen_MUX_structural_vhd_tst IS
+ENTITY MUX_structural_vhd_tst IS
+END MUX_structural_vhd_tst;
+ARCHITECTURE MUX_structural_arch OF MUX_structural_vhd_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL A : STD_LOGIC;
 SIGNAL B : STD_LOGIC;
 SIGNAL S : STD_LOGIC;
 SIGNAL Y : STD_LOGIC;
-COMPONENT xinyue_chen_MUX_structural
+COMPONENT MUX_structural
 	PORT (
 	A : IN STD_LOGIC;
 	B : IN STD_LOGIC;
@@ -46,7 +46,7 @@ COMPONENT xinyue_chen_MUX_structural
 	);
 END COMPONENT;
 BEGIN
-	i1 : xinyue_chen_MUX_structural
+	i1 : MUX_structural
 	PORT MAP (
 -- list connections between master ports and signals
 	A => A,
@@ -95,4 +95,4 @@ BEGIN
 		  
 WAIT;                                                        
 END PROCESS always;                                          
-END xinyue_chen_MUX_structural_arch;
+END MUX_structural_arch;

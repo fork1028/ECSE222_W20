@@ -20,7 +20,7 @@
 -- ***************************************************************************
 -- Generated on "01/29/2020 14:49:36"
                                                             
--- Vhdl Test Bench template for design  :  xinyue_chen_MUX_behavioral
+-- Vhdl Test Bench template for design  :  MUX_behavioral
 -- 
 -- Simulation tool : ModelSim-Altera (VHDL)
 -- 
@@ -28,16 +28,16 @@
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;                                
 
-ENTITY xinyue_chen_MUX_behavioral_vhd_tst IS
-END xinyue_chen_MUX_behavioral_vhd_tst;
-ARCHITECTURE xinyue_chen_MUX_behavioral_arch OF xinyue_chen_MUX_behavioral_vhd_tst IS
+ENTITY MUX_behavioral_vhd_tst IS
+END MUX_behavioral_vhd_tst;
+ARCHITECTURE MUX_behavioral_arch OF MUX_behavioral_vhd_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL A : STD_LOGIC;
 SIGNAL B : STD_LOGIC;
 SIGNAL S : STD_LOGIC;
 SIGNAL Y : STD_LOGIC;
-COMPONENT xinyue_chen_MUX_behavioral
+COMPONENT MUX_behavioral
 	PORT (
 	A : IN STD_LOGIC;
 	B : IN STD_LOGIC;
@@ -46,7 +46,7 @@ COMPONENT xinyue_chen_MUX_behavioral
 	);
 END COMPONENT;
 BEGIN
-	i1 : xinyue_chen_MUX_behavioral
+	i1 : MUX_behavioral
 	PORT MAP (
 -- list connections between master ports and signals
 	A => A,
@@ -68,4 +68,4 @@ BEGIN
         -- code executes for every event on sensitivity list  
 WAIT;                                                        
 END PROCESS always;                                          
-END xinyue_chen_MUX_behavioral_arch;
+END MUX_behavioral_arch;

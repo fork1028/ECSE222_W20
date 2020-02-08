@@ -20,7 +20,7 @@
 -- ***************************************************************************
 -- Generated on "01/29/2020 15:26:09"
                                                             
--- Vhdl Test Bench template for design  :  xinyue_chen_barrel_shifter_behavioral
+-- Vhdl Test Bench template for design  :  barrel_shifter_behavioral
 -- 
 -- Simulation tool : ModelSim-Altera (VHDL)
 -- 
@@ -29,15 +29,15 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;                                
 
-ENTITY xinyue_chen_barrel_shifter_behavioral_vhd_tst IS
-END xinyue_chen_barrel_shifter_behavioral_vhd_tst;
-ARCHITECTURE xinyue_chen_barrel_shifter_behavioral_arch OF xinyue_chen_barrel_shifter_behavioral_vhd_tst IS
+ENTITY barrel_shifter_behavioral_vhd_tst IS
+END barrel_shifter_behavioral_vhd_tst;
+ARCHITECTURE barrel_shifter_behavioral_arch OF barrel_shifter_behavioral_vhd_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL sel : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL X : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL Y : STD_LOGIC_VECTOR(3 DOWNTO 0);
-COMPONENT xinyue_chen_barrel_shifter_behavioral
+COMPONENT barrel_shifter_behavioral
 	PORT (
 	sel : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
 	X : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -45,7 +45,7 @@ COMPONENT xinyue_chen_barrel_shifter_behavioral
 	);
 END COMPONENT;
 BEGIN
-	i1 : xinyue_chen_barrel_shifter_behavioral
+	i1 : barrel_shifter_behavioral
 	PORT MAP (
 -- list connections between master ports and signals
 	sel => sel,
@@ -68,4 +68,4 @@ BEGIN
      END LOOP;
 WAIT;                                                        
 END PROCESS always;                                          
-END xinyue_chen_barrel_shifter_behavioral_arch;
+END barrel_shifter_behavioral_arch;

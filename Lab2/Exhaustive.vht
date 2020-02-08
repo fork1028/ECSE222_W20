@@ -20,7 +20,7 @@
 -- ***************************************************************************
 -- Generated on "01/22/2020 14:43:49"
                                                             
--- Vhdl Test Bench template for design  :  xinyue_chen_comp
+-- Vhdl Test Bench template for design  :  comp
 -- 
 -- Simulation tool : ModelSim-Altera (VHDL)
 -- 
@@ -29,15 +29,15 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;                                
 
-ENTITY xinyue_chen_comp_vhd_tst IS
-END xinyue_chen_comp_vhd_tst;
-ARCHITECTURE xinyue_chen_comp_arch OF xinyue_chen_comp_vhd_tst IS
+ENTITY comp_vhd_tst IS
+END comp_vhd_tst;
+ARCHITECTURE comp_arch OF comp_vhd_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL A : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL AeqB : STD_LOGIC;
 SIGNAL B : STD_LOGIC_VECTOR(3 DOWNTO 0);
-COMPONENT xinyue_chen_comp
+COMPONENT comp
 	PORT (
 	A : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	AeqB : OUT STD_LOGIC;
@@ -45,7 +45,7 @@ COMPONENT xinyue_chen_comp
 	);
 END COMPONENT;
 BEGIN
-	i1 : xinyue_chen_comp
+	i1 : comp
 	PORT MAP (
 -- list connections between master ports and signals
 	A => A,
@@ -64,4 +64,4 @@ BEGIN
      END LOOP;
      WAIT;
 END PROCESS generate_test;	  
-END xinyue_chen_comp_arch;
+END comp_arch;

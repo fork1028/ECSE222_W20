@@ -22,16 +22,16 @@ USE ieee.std_logic_1164.all;
 
 LIBRARY work;
 
-ENTITY xinyue_chen_comp IS 
+ENTITY comp IS 
 	PORT
 	(
 		A :  IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		B :  IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		AeqB :  OUT  STD_LOGIC
 	);
-END xinyue_chen_comp;
+END comp;
 
-ARCHITECTURE bdf_type OF xinyue_chen_comp IS 
+ARCHITECTURE bdf_type OF comp IS 
 
 SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;

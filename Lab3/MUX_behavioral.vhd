@@ -2,14 +2,14 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity xinyue_chen_MUX_behavioral is
+entity MUX_behavioral is
 	Port(A   : in STD_LOGIC;
 		  B	: in STD_LOGIC;
 		  S	: in STD_LOGIC;
 		  Y	: out STD_LOGIC);
-end xinyue_chen_MUX_behavioral;
+end MUX_behavioral;
 
-ARCHITECTURE Behavior OF xinyue_chen_MUX_behavioral IS
+ARCHITECTURE Behavior OF MUX_behavioral IS
 BEGIN
 	process(A,B,S)
 	BEGIN
