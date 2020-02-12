@@ -4,9 +4,9 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity MUX_behavioral is
 	Port(A   : in STD_LOGIC;
-		  B	: in STD_LOGIC;
-		  S	: in STD_LOGIC;
-		  Y	: out STD_LOGIC);
+	     B	 : in STD_LOGIC;
+	     S	 : in STD_LOGIC;
+	     Y	 : out STD_LOGIC);
 end MUX_behavioral;
 
 ARCHITECTURE Behavior OF MUX_behavioral IS

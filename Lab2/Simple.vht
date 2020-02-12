@@ -58,16 +58,16 @@ always : PROCESS
 -- variable declarations                                      
 BEGIN                                                         
         -- code executes for every event on sensitivity list  
-		  A<="0000";
-		  B<="0000";
-		  wait for 10 ns;
-		  A<="1010";
-		  wait for 15 ns;
-		  B<="1010";
-		  wait for 5 ns;
-		  A<="1111";
-		  wait for 20 ns;
-		  B<="1111";
+	A<="0000";
+	B<="0000";
+	wait for 10 ns;
+	A<="1010";
+	wait for 15 ns;
+	B<="1010";
+	wait for 5 ns;
+	A<="1111";
+	wait for 20 ns;
+	B<="1111";
 wait;                                                        
 END PROCESS always;                                          
 END comp_arch;

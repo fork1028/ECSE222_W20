@@ -4,14 +4,14 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity barrel_shifter_structural is
 		Port (X	: in std_logic_vector (3 downto 0);
-				sel: in std_logic_vector (1 downto 0);
-				Y  : out std_logic_vector(3 downto 0));
+			sel: in std_logic_vector (1 downto 0);
+			Y  : out std_logic_vector(3 downto 0));
 end barrel_shifter_structural;
 
 ARCHITECTURE Structure OF barrel_shifter_structural is
 	COMPONENT _MUX_structural
 	PORT ( A,B,S : IN STD_LOGIC;
-				Y     : OUT STD_LOGIC);
+		Y     : OUT STD_LOGIC);
 	END COMPONENT;
 	
 -- Signals

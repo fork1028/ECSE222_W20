@@ -54,18 +54,44 @@ BEGIN
 	S => S,
 	Y => Y
 	);
-init : PROCESS                                               
--- variable declarations                                     
-BEGIN                                                        
-        -- code that executes only once                      
-WAIT;                                                       
-END PROCESS init;                                           
 always : PROCESS                                              
 -- optional sensitivity list                                  
 -- (        )                                                 
 -- variable declarations                                      
 BEGIN                                                         
         -- code executes for every event on sensitivity list  
+	A<='0';
+        B<='0';
+	S<='0';
+	WAIT FOR 10 ns;
+	A<='1';
+	B<='0';
+	S<='0';
+	WAIT FOR 10 ns;
+	A<='1';
+	B<='1';
+	S<='0';
+	WAIT FOR 10 ns;
+	A<='0';
+	B<='1';
+	S<='0';
+	WAIT FOR 10 ns;
+	A<='0';
+	B<='0';
+	S<='1';
+	WAIT FOR 10 ns;
+	A<='1';
+	B<='0';
+	S<='1';
+	WAIT FOR 10 ns;
+	A<='1';
+	B<='1';
+	S<='1';
+	WAIT FOR 10 ns;
+	A<='1';
+	B<='0';
+	S<='1';
+	WAIT FOR 10 ns;		  
 WAIT;                                                        
 END PROCESS always;                                          
 END MUX_behavioral_arch;
