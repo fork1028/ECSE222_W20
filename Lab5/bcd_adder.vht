@@ -62,9 +62,9 @@ always : PROCESS
 -- variable declarations                                      
 BEGIN                                                         
         -- code executes for every event on sensitivity list  
-		  FOR i IN 0 to 15 LOOP
+		  FOR i IN 0 to 9 LOOP
 		  A <= STD_LOGIC_VECTOR(to_unsigned(i,4));
-		  FOR j IN 0 to 15 LOOP
+		  FOR j IN 0 to 9 LOOP
 		  B <= STD_LOGIC_VECTOR(to_unsigned(j,4));
 		  wait for 10 ns;
 		  END LOOP;
