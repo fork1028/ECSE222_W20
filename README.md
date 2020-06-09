@@ -7,3 +7,4 @@ VHDL CODE BACKUP
 * Lab5: One-Digit BCD Adder
 * Lab6: BCD to 7-Segment LED Decoder
 * Lab7: 4-Bit Comparator
+* Lab10: 3-bit Up-Counter Counting in Increments of 1 Second
